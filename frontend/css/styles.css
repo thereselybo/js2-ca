@@ -1,0 +1,51 @@
+.card img {
+    width: auto;
+    object-fit: cover;
+}
+
+.project-container {
+    position: relative;
+}
+
+.search-container, .clear-btn {
+    display: none;
+}
+
+.search-container input {
+    width: 260px;
+}
+
+.clear-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+form .help.is-danger {
+    display: none;
+}
+
+#projectId {
+    display: none;
+}
+
+#editProjectForm {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .search-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

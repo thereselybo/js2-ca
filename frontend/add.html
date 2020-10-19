@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS2 - CA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="nav-container"></div>
+    <section class="section">
+      <div class="container">
+        <div class="form-container">
+            <h1 class="title">Add project</h1>
+            <div class="message-container mb-5"></div>
+            <p class="help">
+                All fields marked with * are obligatory.
+              </p>
+            <form id="addProjectForm">
+              <div class="field">
+                <input class="input" type="text" placeholder="Project name*" id="projectName">
+                <p class="help is-danger" id="projectNameError">
+                  Please enter a project name
+                </p>
+              </div>
+              <div class="field">
+                <input class="input" type="text" placeholder="Technologies*" id="techs">
+                <p class="help is-danger" id="techsError">
+                  Please enter some technologies used in this project. If more than one, please separate with comma
+                </p>
+              </div>
+              <div class="field">
+                <textarea class="textarea" placeholder="Project description*" id="description"></textarea>
+                <p class="help is-danger" id="descriptionError">
+                  Please enter a description for the project
+                </p>
+              </div>
+              <div class="field">
+                <input class="input" type="text" placeholder="Link to image" id="imgLink">
+                <p class="help is-danger" id="imgLinkError">
+                  Please enter a valid url 
+                </p>
+              </div>
+              <div class="field">
+                <input class="input" type="text" placeholder="Link to live project" id="projectLink">
+                <p class="help is-danger" id="projectLinkError">
+                  Please enter a valid url 
+                </p>
+              </div>
+
+              <div class="field">
+                <button class="button is-primary" type="submit">
+                Add project
+                </button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+    <script src="./js/components/projects/add.js" type="module"></script>
+  </body>
+</html>
